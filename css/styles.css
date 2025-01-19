@@ -33,8 +33,12 @@ address {
   font-style: normal;
 }
 
+img {
+  display: block;
+}
+
 .container {
-  width: 1128px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -78,6 +82,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 .header-list-link:hover,
 .header-list-link:focus {
@@ -101,8 +106,9 @@ address {
 }
 
 .header {
-  padding-top: 25.5px;
-  padding-bottom: 25.5px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
@@ -111,6 +117,7 @@ address {
 
 .nav {
   display: flex;
+  align-items: center;
 }
 
 .hero {
@@ -172,6 +179,9 @@ address {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
 .features-item-text {
   font-weight: 400;
   font-size: 16px;
@@ -190,6 +200,7 @@ address {
   color: #2e2f42;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 72px;
 }
 .members-list {
   display: flex;
@@ -197,7 +208,8 @@ address {
 }
 .members-list-item {
   background-color: #ffffff;
-  width: 264px;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .members-text-box {
   background: #fff;
@@ -232,12 +244,14 @@ address {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .portfolio-container {
   display: flex;
   width: 1128px;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-subtitle {
   font-weight: 500;
@@ -245,12 +259,12 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .portfolio-text-box {
-  padding: 32px 0px 32px 16px;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 48px;
 }
 .portfolio-text {
   font-weight: 400;
@@ -271,6 +285,8 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo-color {
   color: #f4f4fd;
